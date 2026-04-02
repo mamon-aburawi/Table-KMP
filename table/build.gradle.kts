@@ -122,7 +122,7 @@ mavenPublishing {
         name = "Table KMP"
         description = "A powerful Compose Multiplatform table library."
         inceptionYear = "2026"
-        url = "" // add link of repository
+        url = "https://github.com/mamon-aburawi/Table-KMP"
         licenses {
             license {
                 name = "MIT License"
@@ -136,7 +136,7 @@ mavenPublishing {
             }
         }
         scm {
-            url = ""
+            url = "https://github.com/mamon-aburawi/Table-KMP"
         }
     }
 
