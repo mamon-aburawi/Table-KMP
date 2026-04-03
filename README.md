@@ -91,7 +91,8 @@ Add the dependency to your `build.gradle.kts` in the `commonMain` source set:
 ```kotlin
 sourceSets {
     commonMain.dependencies {
-        implementation("io.github.mamon-aburawi-table-kmp-{last_version}") 
+        implementation("io.github.mamon-aburawi:table-kmp:{last_version}")
+
     }
 }
 ````
