@@ -36,7 +36,7 @@ TableKMP is designed to feature-match across all Compose Multiplatform targets.
 | **Drag & Drop** | ✅ | ✅ | ✅ | ✅ |
 | **Row Selection** | ✅ | ✅ | ✅ | ✅ |
 | **Horizontal Scroll** | ✅ | ✅ | ✅ | ✅ |
-| **Hover Effects** | ✅ | ➖* | ✅ | ✅ |
+| **Hover Effects** | ➖ | ➖ | ✅ | ✅ |
 | **Ripple Control** | ✅ | ✅ | ✅ | ✅ |
 
 
