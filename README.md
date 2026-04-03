@@ -3,6 +3,10 @@
 
 ![Kotlin](https://img.shields.io/badge/kotlin-multiplatform-blue.svg?logo=kotlin)
 ![Compose](https://img.shields.io/badge/Compose-Multiplatform-green.svg)
+![Android](https://img.shields.io/badge/Android-3DDC84.svg?logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000.svg?logo=apple&logoColor=white)
+![Desktop](https://img.shields.io/badge/Desktop-4A4A55.svg)
+![Web](https://img.shields.io/badge/Web-654FF0.svg?logo=webassembly&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.1-orange.svg)
 
