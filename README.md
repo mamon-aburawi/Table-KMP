@@ -1,5 +1,5 @@
 
-# 📊 TableKMP
+# 📊 Table KMP
 
 ![Kotlin](https://img.shields.io/badge/kotlin-multiplatform-blue.svg?logo=kotlin)
 ![Compose](https://img.shields.io/badge/Compose-Multiplatform-green.svg)
