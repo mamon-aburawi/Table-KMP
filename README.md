@@ -82,8 +82,6 @@ Check out how TableKMP looks and feels across different scenarios.
 
 </div>
 
------
-
 ---
 
 ## 🚀 Installation
