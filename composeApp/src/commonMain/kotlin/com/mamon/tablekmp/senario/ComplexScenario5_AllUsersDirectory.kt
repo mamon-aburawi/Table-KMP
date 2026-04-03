@@ -40,7 +40,6 @@ import tablekmp.composeapp.generated.resources.ic_menu
 
 @Composable
 fun ComplexScenario5_AllUsersDirectory() {
-    var selectedItems by remember { mutableStateOf(emptyList<DirectoryUser>()) }
 
     val columns = listOf(
         TableColumn<DirectoryUser>("NAME", minWidth = 250.dp, weight = 2f) { user, _ ->
@@ -144,7 +143,7 @@ fun ComplexScenario5_AllUsersDirectory() {
     Table(
         items = sampleDirectory,
         columns = columns,
-        onSelectionChanged = { selectedItems = it },
+        onSelectionChanged = { },
         config = TableConfig(
             stripedEnabled = false,
             selectionEnabled = true,
@@ -157,7 +156,7 @@ fun ComplexScenario5_AllUsersDirectory() {
         colors = TableColors(
             headerContainerColor = Color(0xFFF8FAFC),
             headerContentColor = Color(0xFF475569),
-            unSelectedRowContainerColor = Color.White,
+            rowContainerColor = Color.White,
             selectedRowContainerColor = Color(0xFFF8FAFC), // Very subtle selection background
             rowBorderColor = Color(0xFFF1F5F9),
             hoverColor = Color(0xFFF8FAFC),

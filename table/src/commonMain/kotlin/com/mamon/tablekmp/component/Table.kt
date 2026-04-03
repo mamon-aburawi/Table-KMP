@@ -17,6 +17,20 @@ import com.mamon.tablekmp.model.TableConfig
 import com.mamon.tablekmp.dragdrop.VerticalDraggableTool
 import com.mamon.tablekmp.dragdrop.rememberDragDropState
 
+/**
+ * @param T The type of data represented by each row in the table.
+ * @param items The list of data items to be displayed in the table.
+ * @param columns The definitions for each column, including sizing and content rendering logic.
+ * @param isLoading Determines whether the table should hide its content and display the loading state.
+ * @param config The [TableConfig] used to toggle features (e.g., selection, dragging) and adjust sizing/shapes.
+ * @param colors The [TableColors] defining the exact color palette for headers, rows, and tools.
+ * @param onItemClicked Callback invoked when a user clicks on a table row. Provides the clicked item of type [T].
+ * @param onSelectionChanged Callback invoked when row selection changes. Provides the updated list of selected items.
+ * @param onItemsReordered Callback invoked after a user finishes dragging and dropping a row to a new position. Provides the newly ordered list.
+ * @param onLoad A composable lambda to render a custom loading UI when [isLoading] is true.
+ * @param onEmpty A composable lambda to render a custom empty state when [items] is empty and [isLoading] is false.
+ * @param footerContent An optional composable lambda to render sticky or static content at the bottom of the table layout.
+ */
 
 @Composable
 fun <T> Table(

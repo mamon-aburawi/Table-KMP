@@ -83,9 +83,9 @@ fun ComplexScenario3_DarkAnalytics() {
         colors = TableColors(
             headerContainerColor = Color(0xFF0F172A),
             headerContentColor = Color(0xFF94A3B8),
-            unSelectedRowContainerColor = Color(0xFF1E293B),
+            rowContainerColor = Color(0xFF1E293B),
             selectedRowContainerColor = Color(0xFF94A3B8).copy(alpha = 0.2f),
-            unSelectedRowContentColor = Color(0xFFD1D5DB),
+            rowContentColor = Color(0xFFD1D5DB),
             selectedRowContentColor = Color(0xFF10B981),
             rowBorderColor = Color(0xFF0F172A),
             trackColor = Color(0xFF0F172A)

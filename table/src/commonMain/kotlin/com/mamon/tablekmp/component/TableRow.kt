@@ -62,13 +62,13 @@ internal fun <T> TableRow(
     val showHoverEffect = config.hoverEnabled && isHovered
 
     val baseColor = when {
-        isDragging -> colors.unSelectedRowContainerColor
+        isDragging -> colors.rowContainerColor
         isSelected -> colors.selectedRowContainerColor
         config.stripedEnabled && index % 2 != 0 -> Color.LightGray.copy(alpha = 0.1f)
-        else -> colors.unSelectedRowContainerColor
+        else -> colors.rowContainerColor
     }
 
-    val targetContentColor = if (isSelected) colors.selectedRowContentColor else colors.unSelectedRowContentColor
+    val targetContentColor = if (isSelected) colors.selectedRowContentColor else colors.rowContentColor
 
     val animatedScale by animateFloatAsState(
         targetValue = if (isDragging) 1.04f else 1f,
@@ -120,7 +120,7 @@ internal fun <T> TableRow(
                 }
                 columns.forEach { column ->
                     Box(
-                        modifier = Modifier.Companion
+                        modifier = Modifier
                             .tableColumnModifier(this, column, requiresHorizontalScroll)
                             .padding(horizontal = 16.dp),
                         contentAlignment = when (column.contentAlignment) {

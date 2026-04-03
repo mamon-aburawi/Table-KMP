@@ -39,7 +39,6 @@ import tablekmp.composeapp.generated.resources.ic_person
 
 @Composable
 fun ComplexScenario4_AdminDashboard() {
-    var selectedItems by remember { mutableStateOf(emptyList<AdminUserData>()) }
 
     val columns = listOf(
         TableColumn<AdminUserData>("Full Name", minWidth = 200.dp, weight = 2f) { user, _ ->
@@ -147,7 +146,7 @@ fun ComplexScenario4_AdminDashboard() {
     Table(
         items = sampleUsers,
         columns = columns,
-        onSelectionChanged = { selectedItems = it },
+        onSelectionChanged = {  },
         config = TableConfig(
             stripedEnabled = false,
             selectionEnabled = true,
@@ -160,7 +159,7 @@ fun ComplexScenario4_AdminDashboard() {
         colors = TableColors(
             headerContainerColor = Color(0xFF2A3441),
             headerContentColor = Color.White,
-            unSelectedRowContainerColor = Color.White,
+            rowContainerColor = Color.White,
             rowBorderColor = Color(0xFFF1F5F9),
             hoverColor = Color(0xFFF8FAFC),
             headerCheckboxCheckedColor = Color.White,
